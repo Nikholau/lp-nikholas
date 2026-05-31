@@ -13,10 +13,10 @@ const translations = {
     hero_cta_cv: 'Baixar CV',
 
     about_title: 'Sobre mim',
-    about_bio: 'Engenheiro Full-stack com +4 anos de experiência em sistemas de produção para <strong>Fintech</strong>, especializado em NestJS, Node.js e React/Next.js. Construo APIs REST robustas, interfaces React e automações com <strong>agentes de IA e LLMs</strong> aplicados a produto. Fundo e opero a <strong>Veratio Tech</strong> onde arquitetei SaaS agrícola do zero — projetando arquitetura, entregando features e integrando IA com n8n e Claude API em produção real.',
+    about_bio: 'Engenheiro Full-stack com +4 anos de experiência em sistemas de produção para <strong>Fintech</strong>, especializado em NestJS, Node.js e React/Next.js. Construo APIs REST robustas, interfaces React e automações com <strong>agentes de IA e LLMs</strong> aplicados a produto. Tenho experiência prática com <strong>agentes de IA, n8n e Claude API</strong> em produção — integrando automações e IA aplicada em contextos reais de negócio.',
     stat1_label: 'anos de experiência',
     stat2_label: 'usuários no produto',
-    stat3_label: 'SaaS lançado do zero',
+    stat3_label: 'app lançado nas stores',
 
     stack_title: 'Stack',
     stack_backend: 'Backend',
@@ -39,25 +39,16 @@ const translations = {
     exp2_b2: 'Construiu gráficos interativos e CRUDs complexos para plataforma financeira com <strong>+3.000 usuários</strong>',
     exp2_b3: 'Implementou lazy loading, prefetching e renderização condicional — melhorando performance em páginas críticas',
 
-    exp3_role: 'Founder & Tech Lead',
-    exp3_date: 'jan 2026 – presente · São Gotardo, MG',
-    exp3_b1: 'Projetou e entregou SaaS agrícola (<strong>Caderno do Café</strong>) do zero com NestJS + Next.js + Prisma + PostgreSQL + Redis',
-    exp3_b2: 'Implementou autenticação multi-canal: JWT em httpOnly cookies, Magic Link via WhatsApp e Google OAuth',
-    exp3_b3: 'Desenvolveu agentes de IA com <strong>n8n + Claude API + WhatsApp</strong> para automação de atendimento nos setores Agro e Financeiro',
-
     exp4_role: 'Full-stack Developer',
     exp4_date: 'out 2024 – dez 2024 · São Paulo, SP',
     exp4_b1: 'Reduziu complexidade de UI consolidando <strong>4 telas em 1 dashboard</strong> unificado para assessores financeiros',
     exp4_b2: 'Implementou monitoramento com <strong>Datadog</strong>, reduzindo tempo de detecção e resolução de falhas em produção',
 
     proj_title: 'Projetos',
-    proj_tag_saas: 'SaaS · Agro',
-    proj1_title: 'Caderno do Café',
-    proj1_desc: 'SaaS agrícola para gestão de safras, talhões, despesas e vendas de café. Arquitetura completa do zero: NestJS + Next.js + Prisma + PostgreSQL + Redis + Claude API.',
     proj2_title: 'Mundo Invest App',
     proj2_desc: 'Aplicativo de gestão financeira pessoal com +3.000 usuários, integração com Open Finance (BCB) e B3, construído com React Native e NestJS.',
     proj3_title: 'Automações IA & WhatsApp',
-    proj3_desc: 'Pipelines de automação com n8n + Claude API + WhatsApp para atendimento e engajamento de clientes nos setores Agro e Fintech. Zero intervenção manual após setup.',
+    proj3_desc: 'Pipelines de automação com n8n + Claude API + WhatsApp para atendimento e engajamento de clientes no setor Fintech. Zero intervenção manual após setup.',
 
     talk_title: 'Palestras',
     talk_badge: 'Palestra',
@@ -83,10 +74,10 @@ const translations = {
     hero_cta_cv: 'Download CV',
 
     about_title: 'About me',
-    about_bio: 'Full-stack Engineer with 4+ years of experience building production systems for <strong>Fintech</strong>, specialized in NestJS, Node.js, and React/Next.js. I build robust REST APIs, React interfaces, and AI-powered automation with <strong>LLMs applied to real products</strong>. I founded and run <strong>Veratio Tech</strong> where I architected an agricultural SaaS from scratch — designing the system, shipping features, and integrating AI with n8n and Claude API in production.',
+    about_bio: 'Full-stack Engineer with 4+ years of experience building production systems for <strong>Fintech</strong>, specialized in NestJS, Node.js, and React/Next.js. I build robust REST APIs, React interfaces, and AI-powered automation with <strong>LLMs applied to real products</strong>. I have hands-on experience with <strong>AI agents, n8n, and Claude API</strong> in production — integrating automation and applied AI in real business contexts.',
     stat1_label: 'years of experience',
     stat2_label: 'product users',
-    stat3_label: 'SaaS launched from scratch',
+    stat3_label: 'app shipped to stores',
 
     stack_title: 'Stack',
     stack_backend: 'Backend',
@@ -109,25 +100,16 @@ const translations = {
     exp2_b2: 'Built interactive charts and complex CRUDs for a financial platform with <strong>3,000+ active users</strong>',
     exp2_b3: 'Implemented lazy loading, prefetching, and conditional rendering — improving performance on critical pages',
 
-    exp3_role: 'Founder & Tech Lead',
-    exp3_date: 'Jan 2026 – Present · São Gotardo, Brazil',
-    exp3_b1: 'Designed and shipped agricultural SaaS (<strong>Caderno do Café</strong>) from scratch: NestJS + Next.js + Prisma + PostgreSQL + Redis',
-    exp3_b2: 'Implemented multi-channel auth: JWT in httpOnly cookies, Magic Link via WhatsApp, and Google OAuth',
-    exp3_b3: 'Built AI agents with <strong>n8n + Claude API + WhatsApp</strong> for automated customer engagement in Agri and Fintech sectors',
-
     exp4_role: 'Full-stack Developer',
     exp4_date: 'Oct 2024 – Dec 2024 · São Paulo, Brazil',
     exp4_b1: 'Reduced UI complexity consolidating <strong>4 screens into 1 dashboard</strong> for financial advisors',
     exp4_b2: 'Implemented <strong>Datadog</strong> monitoring, reducing MTTD and MTTR for production incidents',
 
     proj_title: 'Projects',
-    proj_tag_saas: 'SaaS · Agri',
-    proj1_title: 'Caderno do Café',
-    proj1_desc: 'Agricultural SaaS for managing harvests, farm plots, expenses, and coffee sales. Complete architecture from scratch: NestJS + Next.js + Prisma + PostgreSQL + Redis + Claude API.',
     proj2_title: 'Mundo Invest App',
     proj2_desc: 'Personal financial management app with 3,000+ users, Open Finance (BCB) and B3 integration, built with React Native and NestJS.',
     proj3_title: 'AI & WhatsApp Automations',
-    proj3_desc: 'Automation pipelines with n8n + Claude API + WhatsApp for customer engagement in Agri and Fintech sectors. Zero manual intervention after setup.',
+    proj3_desc: 'Automation pipelines with n8n + Claude API + WhatsApp for customer engagement in the Fintech sector. Zero manual intervention after setup.',
 
     talk_title: 'Talks',
     talk_badge: 'Talk',
