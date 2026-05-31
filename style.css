@@ -599,10 +599,9 @@ a { color: inherit; }
 .talk-card__video {
   display: block;
   width: 100%;
-  max-height: 340px;
+  height: auto;
   border-radius: 10px;
   margin-top: 20px;
-  object-fit: cover;
   border: 1px solid var(--border);
 }
 
