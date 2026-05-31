@@ -54,10 +54,9 @@ const translations = {
     talk_badge: 'Palestra',
     talk_event_title: 'Desenvolvimento de Soluções Inteligentes Aplicadas ao Agronegócio',
     talk_date: '15 de abril de 2026',
-    talk_desc: 'Palestra convidada no módulo Seminários em Tendência e Tópicos Avançados em Engenharia de Software (Engenharia de Software II) — UFV Campus Rio Paranaíba. 2 horas. Declaração assinada digitalmente via gov.br.',
+    talk_desc: 'Palestra convidada no módulo Seminários em Tendência e Tópicos Avançados em Engenharia de Software (Engenharia de Software II) — UFV Campus Rio Paranaíba.',
 
     contact_title: 'Contato',
-    contact_sub: 'Aberto a oportunidades CLT. Vamos conversar?',
   },
 
   en: {
@@ -115,10 +114,9 @@ const translations = {
     talk_badge: 'Talk',
     talk_event_title: 'Intelligent Solutions Applied to Agribusiness',
     talk_date: 'April 15, 2026',
-    talk_desc: 'Guest speaker at the Trends and Advanced Topics in Software Engineering seminar module (Software Engineering II) — Federal University of Viçosa, Rio Paranaíba Campus. 2-hour session. Certificate digitally signed via gov.br.',
+    talk_desc: 'Guest speaker at the Trends and Advanced Topics in Software Engineering seminar module (Software Engineering II) — Federal University of Viçosa, Rio Paranaíba Campus.',
 
     contact_title: 'Contact',
-    contact_sub: "Open to CLT opportunities. Let's talk?",
   }
 };
 

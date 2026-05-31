@@ -596,6 +596,16 @@ a { color: inherit; }
   line-height: 1.7;
 }
 
+.talk-card__video {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  border-radius: 10px;
+  margin-top: 20px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
 /* ===== CONTACT ===== */
 .contact__subtitle {
   font-size: 18px;
