@@ -56,6 +56,11 @@ const translations = {
     talk_date: '15 de abril de 2026',
     talk_desc: 'Palestra convidada no módulo Seminários em Tendência e Tópicos Avançados em Engenharia de Software (Engenharia de Software II) — UFV Campus Rio Paranaíba.',
 
+    talk2_badge: 'Minicurso',
+    talk2_event_title: 'Desenvolva seu Portfólio Pessoal em React e TypeScript',
+    talk2_date: 'nov 2023',
+    talk2_desc: 'Ministrante no XIV Workshop de Sistemas de Informação (WSIS) — Universidade Federal de Viçosa. 1.200 minutos de carga horária. Certificado registrado no RAEX/UFV.',
+
     contact_title: 'Contato',
   },
 
@@ -115,6 +120,11 @@ const translations = {
     talk_event_title: 'Intelligent Solutions Applied to Agribusiness',
     talk_date: 'April 15, 2026',
     talk_desc: 'Guest speaker at the Trends and Advanced Topics in Software Engineering seminar module (Software Engineering II) — Federal University of Viçosa, Rio Paranaíba Campus.',
+
+    talk2_badge: 'Workshop',
+    talk2_event_title: 'Build Your Personal Portfolio in React and TypeScript',
+    talk2_date: 'Nov 2023',
+    talk2_desc: 'Instructor at the XIV Information Systems Workshop (WSIS) — Federal University of Viçosa. 1,200 minutes total. Certificate registered at RAEX/UFV.',
 
     contact_title: 'Contact',
   }
