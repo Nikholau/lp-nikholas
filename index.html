@@ -17,6 +17,8 @@
 </head>
 <body>
 
+  <div id="scroll-progress"></div>
+
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav__inner">
@@ -35,8 +37,29 @@
     </div>
   </nav>
 
+  <!-- TUBELIGHT NAV (mobile bottom) -->
+  <div class="tubelight-nav" id="tubelight-nav" aria-label="Navegação rápida">
+    <a href="#sobre" class="tubelight-nav__item" data-section="sobre" title="Sobre">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </a>
+    <a href="#stack" class="tubelight-nav__item" data-section="stack" title="Stack">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+    </a>
+    <a href="#experiencia" class="tubelight-nav__item" data-section="experiencia" title="Experiência">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+    </a>
+    <a href="#projetos" class="tubelight-nav__item" data-section="projetos" title="Projetos">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+    </a>
+    <a href="#contato" class="tubelight-nav__item" data-section="contato" title="Contato">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </a>
+  </div>
+
   <!-- HERO -->
-  <section class="hero" id="inicio">
+  <div class="hero-section" id="inicio">
+  <div class="aurora-bg" aria-hidden="true"></div>
+  <section class="hero">
     <div class="hero__content">
       <p class="hero__greeting fade-up" data-i18n="hero_greeting">Olá, sou</p>
       <h1 class="hero__name fade-up">Nikholas Queiroz</h1>
@@ -52,6 +75,7 @@
       <img src="assets/hero.jpg" alt="Nikholas Queiroz" loading="eager">
     </div>
   </section>
+  </div>
 
   <!-- ABOUT -->
   <section class="section" id="sobre">
@@ -86,6 +110,43 @@
   <section class="section section--alt" id="stack">
     <div class="container">
       <h2 class="section__title fade-up" data-i18n="stack_title">Stack</h2>
+
+      <!-- Display Cards -->
+      <div class="display-cards-wrap fade-up">
+        <div class="display-cards">
+          <div class="display-card">
+            <div class="display-card__header">
+              <span class="display-card__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>
+              <span class="display-card__title">Backend</span>
+            </div>
+            <span class="display-card__desc">NestJS · Node.js · TypeScript</span>
+            <span class="display-card__meta">APIs REST e GraphQL</span>
+          </div>
+          <div class="display-card">
+            <div class="display-card__header">
+              <span class="display-card__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.663 17h4.673M12 3v1m6.364 1.636-.707.707M21 12h-1M4 12H3m3.343-5.657-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+              </span>
+              <span class="display-card__title">IA Aplicada</span>
+            </div>
+            <span class="display-card__desc">Claude API · n8n · Agentes</span>
+            <span class="display-card__meta">Automação em produção</span>
+          </div>
+          <div class="display-card">
+            <div class="display-card__header">
+              <span class="display-card__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </span>
+              <span class="display-card__title">Full-stack</span>
+            </div>
+            <span class="display-card__desc">React · Next.js · React Native</span>
+            <span class="display-card__meta">+4 anos em produção</span>
+          </div>
+        </div>
+      </div>
+
       <div class="stack__grid fade-up">
         <div class="stack__category">
           <h3 data-i18n="stack_backend">Backend</h3>
@@ -151,102 +212,58 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
+  <!-- EXPERIENCE (Orbital Timeline) -->
   <section class="section" id="experiencia">
     <div class="container">
       <h2 class="section__title fade-up" data-i18n="exp_title">Experiência</h2>
-      <div class="timeline">
-
-        <div class="timeline__item fade-up">
-          <div class="timeline__dot"></div>
-          <div class="timeline__content">
-            <div class="timeline__header">
-              <h3 class="timeline__role" data-i18n="exp1_role">Software Engineer (Backend)</h3>
-              <span class="timeline__company">Mundo Invest</span>
-            </div>
-            <p class="timeline__date" data-i18n="exp1_date">jun 2025 – presente · São Paulo, SP</p>
-            <ul class="timeline__bullets">
-              <li data-i18n="exp1_b1">Implementou módulo de <strong>Open Finance</strong> integrando APIs reguladas do Banco Central para consolidação e portabilidade de dados financeiros</li>
-              <li data-i18n="exp1_b2">Desenvolveu integração com a <strong>B3</strong> para consulta e processamento de dados do mercado de capitais em tempo real</li>
-              <li data-i18n="exp1_b3">Implementou workflows de automação com <strong>n8n, Zenvia, RD Station e Pipefy</strong>, eliminando tarefas repetitivas</li>
-              <li data-i18n="exp1_b4">Desenvolveu <strong>skills customizadas para Claude Code</strong> adaptadas ao contexto da empresa, automatizando fluxos recorrentes de engenharia</li>
-            </ul>
-            <p class="timeline__stack">Node.js · NestJS · TypeScript · Open Finance · B3 · n8n</p>
-          </div>
-        </div>
-
-        <div class="timeline__item fade-up">
-          <div class="timeline__dot"></div>
-          <div class="timeline__content">
-            <div class="timeline__header">
-              <h3 class="timeline__role" data-i18n="exp2_role">Mobile &amp; Web Developer</h3>
-              <span class="timeline__company">Mundo Invest</span>
-            </div>
-            <p class="timeline__date" data-i18n="exp2_date">ago 2023 – jun 2025 · São Paulo, SP</p>
-            <ul class="timeline__bullets">
-              <li data-i18n="exp2_b1">Desenvolveu app mobile do zero com <strong>React Native</strong> e liderou lançamento nas stores iOS e Android</li>
-              <li data-i18n="exp2_b2">Construiu gráficos interativos e CRUDs complexos para plataforma financeira com <strong>+3.000 usuários</strong></li>
-              <li data-i18n="exp2_b3">Implementou lazy loading, prefetching e renderização condicional — melhorando performance em páginas críticas</li>
-            </ul>
-            <p class="timeline__stack">React Native · ReactJS · Next.js · TypeScript · Jest</p>
-          </div>
-        </div>
-
-        <div class="timeline__item fade-up">
-          <div class="timeline__dot"></div>
-          <div class="timeline__content">
-            <div class="timeline__header">
-              <h3 class="timeline__role" data-i18n="exp4_role">Full-stack Developer</h3>
-              <span class="timeline__company">EWZ Capital</span>
-            </div>
-            <p class="timeline__date" data-i18n="exp4_date">out 2024 – dez 2024 · São Paulo, SP</p>
-            <ul class="timeline__bullets">
-              <li data-i18n="exp4_b1">Reduziu complexidade de UI consolidando <strong>4 telas em 1 dashboard</strong> unificado para assessores financeiros</li>
-              <li data-i18n="exp4_b2">Implementou monitoramento com <strong>Datadog</strong>, reduzindo tempo de detecção e resolução de falhas em produção</li>
-            </ul>
-            <p class="timeline__stack">Node.js · TypeScript · Express · PostgreSQL · Docker · Datadog</p>
-          </div>
-        </div>
-
-      </div>
+      <p class="orbital-hint fade-up" data-i18n="orbital_hint">Clique em um nó para ver detalhes</p>
+      <div class="orbital-timeline fade-up" id="orbital-timeline" aria-label="Timeline de experiência orbital"></div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- PROJECTS (Bento Grid) -->
   <section class="section section--alt" id="projetos">
     <div class="container">
       <h2 class="section__title fade-up" data-i18n="proj_title">Projetos</h2>
-      <div class="projects__grid">
+      <div class="bento-grid fade-up">
 
-        <div class="project-card fade-up">
-          <div class="project-card__header">
-            <span class="project-card__tag">Fintech</span>
-            <div class="project-card__links">
-              <a href="https://github.com/Nikholau" target="_blank" rel="noopener" aria-label="GitHub">↗</a>
+        <a class="bento-card bento-card--featured" href="https://github.com/Nikholau/casecellshop" target="_blank" rel="noopener">
+          <div class="bento-card__top">
+            <div class="bento-card__icon bento-card__icon--purple">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <span class="bento-card__status">TypeScript</span>
+          </div>
+          <div class="bento-card__body">
+            <h3 class="bento-card__title" data-i18n="proj_case_title">casecellshop</h3>
+            <p class="bento-card__desc" data-i18n="proj_case_desc">E-commerce de capinhas para celular com catálogo de produtos, carrinho e checkout. Open source no GitHub.</p>
+          </div>
+          <div class="bento-card__footer">
+            <div class="bento-card__tags">
+              <span>#TypeScript</span><span>#E-commerce</span>
+            </div>
+            <span class="bento-card__cta" data-i18n="proj_cta_github">GitHub →</span>
+          </div>
+          <div class="bento-card__pattern"></div>
+        </a>
+
+        <div class="bento-card">
+          <div class="bento-card__top">
+            <div class="bento-card__icon bento-card__icon--accent">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M8.46 8.46a5 5 0 0 0 0 7.07"/></svg>
+            </div>
+            <span class="bento-card__status bento-card__status--live" data-i18n="proj_ai_status">Produção</span>
+          </div>
+          <div class="bento-card__body">
+            <h3 class="bento-card__title" data-i18n="proj3_title">Automações IA &amp; WhatsApp</h3>
+            <p class="bento-card__desc" data-i18n="proj3_desc">Pipelines com n8n + Claude API + WhatsApp para atendimento e engajamento. Zero intervenção manual após setup.</p>
+          </div>
+          <div class="bento-card__footer">
+            <div class="bento-card__tags">
+              <span>#n8n</span><span>#Claude API</span><span>#WhatsApp</span>
             </div>
           </div>
-          <h3 data-i18n="proj2_title">Mundo Invest App</h3>
-          <p data-i18n="proj2_desc">Aplicativo de gestão financeira pessoal com +3.000 usuários, integração com Open Finance (BCB) e B3, construído com React Native e NestJS.</p>
-          <div class="pills pills--sm">
-            <span class="pill">React Native</span>
-            <span class="pill">NestJS</span>
-            <span class="pill">Open Finance</span>
-            <span class="pill">B3</span>
-          </div>
-        </div>
-
-        <div class="project-card fade-up">
-          <div class="project-card__header">
-            <span class="project-card__tag">AI &amp; Automation</span>
-          </div>
-          <h3 data-i18n="proj3_title">Automações IA &amp; WhatsApp</h3>
-          <p data-i18n="proj3_desc">Pipelines de automação com n8n + Claude API + WhatsApp para atendimento e engajamento de clientes nos setores Agro e Fintech. Zero intervenção manual após setup.</p>
-          <div class="pills pills--sm">
-            <span class="pill pill--accent">n8n</span>
-            <span class="pill pill--accent">Claude API</span>
-            <span class="pill">WhatsApp API</span>
-            <span class="pill">Zenvia</span>
-          </div>
+          <div class="bento-card__pattern"></div>
         </div>
 
       </div>
@@ -257,24 +274,28 @@
   <section class="section" id="palestras">
     <div class="container">
       <h2 class="section__title fade-up" data-i18n="talk_title">Palestras</h2>
-      <div class="talk-card fade-up">
-        <div class="talk-card__badge" data-i18n="talk_badge">Palestra</div>
-        <div class="talk-card__content">
-          <h3 data-i18n="talk_event_title">Desenvolvimento de Soluções Inteligentes Aplicadas ao Agronegócio</h3>
-          <p class="talk-card__meta">UFV — <span data-i18n="talk_date">15 de abril de 2026</span></p>
-          <p data-i18n="talk_desc">Palestra convidada no módulo Seminários em Tendência e Tópicos Avançados em Engenharia de Software (Engenharia de Software II) — UFV Campus Rio Paranaíba.</p>
-          <video class="talk-card__video" src="assets/palestra-ufv.mp4" autoplay muted loop playsinline></video>
-        </div>
-      </div>
+      <div class="talk-grid fade-up">
 
-      <div class="talk-card fade-up">
-        <div class="talk-card__badge" data-i18n="talk2_badge">Minicurso</div>
-        <div class="talk-card__content">
-          <h3 data-i18n="talk2_event_title">Desenvolva seu Portfólio Pessoal em React e TypeScript</h3>
-          <p class="talk-card__meta">UFV · WSIS — <span data-i18n="talk2_date">nov 2023</span></p>
-          <p data-i18n="talk2_desc">Ministrante no XIV Workshop de Sistemas de Informação (WSIS) — Universidade Federal de Viçosa. 1.200 minutos de carga horária. Certificado registrado no RAEX/UFV.</p>
-          <img class="talk-card__video" src="assets/wsis.jpg" alt="XIV WSIS UFV — Minicurso React e TypeScript" loading="lazy">
+        <div class="talk-card">
+          <div class="talk-card__badge" data-i18n="talk_badge">Palestra</div>
+          <div class="talk-card__content">
+            <h3 data-i18n="talk_event_title">Desenvolvimento de Soluções Inteligentes Aplicadas ao Agronegócio</h3>
+            <p class="talk-card__meta">UFV — <span data-i18n="talk_date">15 de abril de 2026</span></p>
+            <p data-i18n="talk_desc">Palestra convidada no módulo Seminários em Tendência e Tópicos Avançados em Engenharia de Software (Engenharia de Software II) — UFV Campus Rio Paranaíba.</p>
+            <video class="talk-card__video" src="assets/palestra-ufv.mp4" autoplay muted loop playsinline></video>
+          </div>
         </div>
+
+        <div class="talk-card">
+          <div class="talk-card__badge" data-i18n="talk2_badge">Minicurso</div>
+          <div class="talk-card__content">
+            <h3 data-i18n="talk2_event_title">Desenvolva seu Portfólio Pessoal em React e TypeScript</h3>
+            <p class="talk-card__meta">UFV · WSIS — <span data-i18n="talk2_date">nov 2023</span></p>
+            <p data-i18n="talk2_desc">Ministrante no XIV Workshop de Sistemas de Informação (WSIS) — Universidade Federal de Viçosa. 1.200 minutos de carga horária. Certificado registrado no RAEX/UFV.</p>
+            <img class="talk-card__video" src="assets/wsis.jpg" alt="XIV WSIS UFV — Minicurso React e TypeScript" loading="lazy">
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -314,6 +335,6 @@
     <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
   </a>
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
