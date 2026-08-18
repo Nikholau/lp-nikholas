@@ -15,7 +15,7 @@ const translations = {
     hero_cta_cv: 'Baixar CV',
 
     about_title: 'Sobre mim',
-    about_bio: 'Engenheiro Full-stack com +4 anos de experiência em sistemas de produção para <strong>Fintech</strong>, especializado em NestJS, Node.js e React/Next.js. Construo APIs REST robustas, interfaces React e automações com <strong>agentes de IA e LLMs</strong> aplicados a produto. Tenho experiência prática com <strong>agentes de IA, n8n e Claude API</strong> em produção — integrando automações e IA aplicada em contextos reais de negócio.',
+    about_bio: 'Engenheiro Full-stack com +5 anos de experiência em sistemas de produção para <strong>Fintech</strong>, especializado em NestJS, Node.js e React/Next.js. Construo APIs REST robustas, interfaces React e automações com <strong>agentes de IA e LLMs</strong> aplicados a produto. Tenho experiência prática com <strong>agentes de IA, n8n e Claude API</strong> em produção — integrando automações e IA aplicada em contextos reais de negócio.',
     stat1_label: 'anos de experiência',
     stat2_label: 'usuários no produto',
     stat3_label: 'app lançado nas stores',
@@ -89,7 +89,7 @@ const translations = {
     hero_cta_cv: 'Download CV',
 
     about_title: 'About me',
-    about_bio: 'Full-stack Engineer with 4+ years of experience building production systems for <strong>Fintech</strong>, specialized in NestJS, Node.js, and React/Next.js. I build robust REST APIs, React interfaces, and AI-powered automation with <strong>LLMs applied to real products</strong>. I have hands-on experience with <strong>AI agents, n8n, and Claude API</strong> in production — integrating automation and applied AI in real business contexts.',
+    about_bio: 'Full-stack Engineer with 5+ years of experience building production systems for <strong>Fintech</strong>, specialized in NestJS, Node.js, and React/Next.js. I build robust REST APIs, React interfaces, and AI-powered automation with <strong>LLMs applied to real products</strong>. I have hands-on experience with <strong>AI agents, n8n, and Claude API</strong> in production — integrating automation and applied AI in real business contexts.',
     stat1_label: 'years of experience',
     stat2_label: 'product users',
     stat3_label: 'app shipped to stores',
@@ -274,8 +274,8 @@ inView('.contact__links', () => {
 }, { amount: 0.2 });
 
 // ===== STAT COUNTER ANIMATION =====
-const statRawValues = [4, 3000, 1];
-const statDisplayValues = ['4+', '+3K', '1'];
+const statRawValues = [5, 160000, 1];
+const statDisplayValues = ['5+', '+160K', '1'];
 
 inView('.stats', () => {
   document.querySelectorAll('.stat__value').forEach((el, i) => {
@@ -291,7 +291,7 @@ inView('.stats', () => {
       const current = Math.round(eased * target);
 
       if (i === 1) {
-        el.textContent = current >= 1000 ? '+3K' : `+${current}`;
+        el.textContent = current >= 1000 ? `+${Math.floor(current / 1000)}K` : `+${current}`;
       } else if (i === 0) {
         el.textContent = current + (progress >= 1 ? '+' : '');
       } else {
